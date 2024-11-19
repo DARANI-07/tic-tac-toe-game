@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="4.css">
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div id="userpick">
+            <h2>Pick X or O</h2>
+            <button class="btns" id="btnX">X</button>
+            <button class="btns" id="btnO">O</button>
+        </div>
+    </div>
+</div>
+
+<table border="1" id="tttboard">
+    <tr>
+        <td id="b1" class="cell"></td>
+        <td id="b2" class="cell"></td>
+        <td id="b3" class="cell"></td>
+    </tr>
+    <tr>
+        <td id="b4" class="cell"></td>
+        <td id="b5" class="cell"></td>
+        <td id="b6" class="cell"></td>
+    </tr>
+    <tr>
+        <td id="b7" class="cell"></td>
+        <td id="b8" class="cell"></td>
+        <td id="b9" class="cell"></td>
+    </tr>
+</table>
+
+<h2 id="result" style="margin-top: 20px;"></h2>
+<button id="restartBtn" class="btns" style="display: none;">Restart Game</button>
+<div id="scoreboard">
+    <h3>Scoreboard</h3>
+    <p>X: <span id="scoreX">0</span></p>
+    <p>O: <span id="scoreO">0</span></p>
+</div>
+
+<script src="4.js"></script>
+</body>
+</html>

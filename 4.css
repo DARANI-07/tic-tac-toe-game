@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradient background */
+    height: 100vh; /* Full height for the body */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#tttboard {
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden; /* Round the corners */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 48px; /* Increased font size */
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.btns {
+    margin: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none; /* Remove default border */
+    border-radius: 5px;
+    background-color: #0072ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.btns:hover {
+    background-color: #005bb5; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+#scoreboard {
+    margin-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#result {
+    font-size: 24px; 
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#restartBtn {
+    background-color: #ff4d4d; /* Red background for restart button */
+}
+
+#restartBtn:hover {
+    background-color: #cc0000; /* Darker red on hover */
